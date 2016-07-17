@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-	<!-- oracle lib location -->
+	<!-- oracle lib location
 	<classPathEntry location="D:\oracle\jdbc\lib\ojdbc14.jar" />
+	 -->
+	 <classPathEntry location="C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\5.1.39\mysql-connector-java-5.1.39.jar" />
 	<context id="DB2Tables" targetRuntime="MyBatis3">
 		<commentGenerator>
 			<property name="suppressAllComments" value="true" />
 		</commentGenerator>
-		<!-- oracle URL、username、password -->
+		<!-- oracle URL、username、password 
 		<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver" connectionURL="jdbc:oracle:thin:@localhost:1521:orcl" userId="scott" password="oracle">
+		</jdbcConnection>
+		-->
+		<!-- mysql -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.100.130:3306/test" userId="root" password="123456">
 		</jdbcConnection>
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="false" />
