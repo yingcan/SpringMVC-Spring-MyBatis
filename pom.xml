@@ -1,10 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>zhibing_mybatis</groupId>
-  <artifactId>zhibing_mybatis</artifactId>
+  <groupId>SSMDemo</groupId>
+  <artifactId>SSMDemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>zhibing_mybatis</name>
+  
+  <!--项目的名称, Maven产生的文档用-->
+  <name>SSMDemo</name>
   <description/>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -109,12 +111,14 @@
   
   <build>
     <plugins>
+    <!-- maven-compiler-plugin 是内置的插件，添加加是为了配置编译的jdk版本 -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+        	<!-- 配置编译的jdk版本 -->
+          <source>1.7</source> 
+          <target>1.7</target>
         </configuration>
       </plugin>
       <plugin>
@@ -126,7 +130,7 @@
         </configuration>
       </plugin>
     </plugins>
-    
-    <finalName>zhibing_mybatis</finalName>
+     <!--产生的构件的文件名，默认值是${artifactId}-${version}。-->
+    <finalName>SSMDemo</finalName>
   </build>
 </project>
